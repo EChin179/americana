@@ -741,6 +741,10 @@ nav {
   margin: 1em auto;
 }
 
+.text-box p {
+  text-align: center;
+}
+
 @media (max-width: 48rem) {
   .text-box {
     margin: 0 auto;

@@ -53,6 +53,9 @@
 .text-box {
   width: 80%;
   margin: 1em auto;
+  p {
+    text-align: center;
+  }
   @include mq-m {
     margin: 0 auto;
   }
