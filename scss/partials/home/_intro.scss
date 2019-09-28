@@ -1,0 +1,55 @@
+.intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4)), url("../img/home/hero.jpg");
+  background-size: cover;
+  background-position: 93% 0%;
+  height: 115vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 50% 100%, 0 100vh);
+  z-index: 100;
+}
+
+.hero {
+  width: 25em;
+  position: relative;
+  left: 15%;
+  top: 15%;
+
+  @include mq-d {
+    width: 20em;
+  }
+
+  @include mq-m {
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15em;
+  }
+}
+
+.btn {
+  border: 1px solid $accent1;
+  padding: 1.2em 3em;
+  border-radius: 50px;
+  border: none;
+  background-color: $accent1;
+  color: $white;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: $accent2;
+  }
+}
+
+.title {
+  text-align: left;
+
+  @include mq-m {
+    text-align: center;
+  }
+}

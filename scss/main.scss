@@ -1,0 +1,24 @@
+@import 'modules/typography';
+@import 'modules/normalize';
+@import 'modules/colors';
+@import 'modules/mixins';
+
+@import 'partials/base';
+
+@import 'partials/home/intro';
+@import 'partials/home/nav';
+@import 'partials/home/overview';
+@import 'partials/home/activities';
+@import 'partials/home/carousel';
+@import 'partials/home/footer';
+
+@import 'partials/about/about-intro';
+@import 'partials/about/about-staff';
+
+@import 'partials/programs/programs';
+
+@import 'partials/resources/resources';
+
+@import 'partials/calendar/calendar';
+
+@import 'partials/contact/contact';

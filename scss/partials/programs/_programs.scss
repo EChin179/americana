@@ -1,0 +1,239 @@
+.memory-care {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6)), url("../img/home/wood.jpg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%);
+  position: relative;
+  z-index: -99;
+  padding: 22em 0;
+  margin-top: -10em;
+
+  h2 {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  @include mq-d {
+    padding: 15em 0;
+  }
+
+  @include mq-m {
+    padding: 15em 0 10em;
+  }
+}
+
+.wellness-program {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4)), url("../img/home/mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -200;
+  clip-path: polygon(0 15vw, 100% 0, 100% 100%, 0 calc(100% - 15vw));
+  padding: 30em 0 15em;
+  margin-top: -25em;
+
+  @include mq-m {
+    padding: 30em 0 5em;
+  }
+
+  @include mq-xw {
+    margin-top: -26em;
+    padding: 30em 0 20em;
+  }
+}
+
+.referral-program {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6)), url("../img/programs/marble.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -201;
+  clip-path: polygon(0 0, 100% 15vw, 100% 100%, 0 100%);
+  padding: 25em 0 10em;
+  margin-top: -23em;
+
+  @include mq-d {
+    padding: 25em 0 5em;
+  }
+
+  @include mq-m {
+    padding: 27em 0 2em;
+  }
+
+  @include mq-xw {
+    margin-top: -26em;
+  }
+}
+
+.programs-box {
+
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  max-width: 100em;
+  margin: 0 auto;
+  position: relative;
+
+  @include mq-d {
+    width: 80vw;
+  }
+
+  .text-container {
+    display: flex;
+    height: 16em;
+    justify-content: center;
+  }
+
+  p {
+    margin: auto;
+    text-align: center;
+    padding: 1em 6em;
+
+    @include mq-d {
+      padding: 1em 2em;
+    }
+  }
+
+  span {
+    color: $red;
+  }
+
+  .small-text--black {
+    color: $gray;
+  }
+
+  img {
+    width: 16em;
+    height: 16em;
+    object-fit: cover;
+
+    &:not(.icon) {
+      @include mq-m {
+        display: none;
+      }
+    }
+  }
+
+  .circle-border {
+    border-radius: 50%;
+  }
+}
+
+.programs-box--green {
+
+  .text-container {
+    background-color: $accent2t;
+  }
+
+  img {
+    border: 20px solid $accent2t;
+  }
+}
+
+.programs-box--red {
+
+  .text-container {
+    background-color: $accent1;
+  }
+
+  img {
+    border: 20px solid $accent1;
+  }
+}
+
+.icons {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 50vw;
+
+  @include mq-d {
+    width: 85vw;
+  }
+
+  @include mq-m {
+    display: none;
+  }
+
+  figure {
+    width: 8em;
+
+    @include mq-m {
+      width: 5em;
+    }
+  }
+
+  figcaption {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+}
+
+.icons--first-row {
+  margin-bottom: 2em;
+}
+
+.programs-box--icon {
+
+  background-color: $accent1;
+  align-items: center;
+  justify-content: space-around;
+
+  .text-container {
+    background-color: transparent;
+  }
+
+  .icon {
+    border: none;
+    border-radius: 0;
+    width: 5em;
+    height: 5em;
+
+    @include mq-m {
+      width: 3em;
+      height: 3em;
+    }
+  }
+
+}
+
+.programs-box--icon-green {
+  background-color: $accent2t;
+}
+
+.programs-box--icon-left {
+  padding-left: 6em;
+
+  @include mq-d {
+    padding-left: 4em;
+  }
+
+  @include mq-m {
+    padding-left: 2em;
+  }
+
+}
+
+.programs-box--icon-right {
+  padding-right: 6em;
+
+  @include mq-d {
+    padding-right: 4em;
+  }
+
+  @include mq-m {
+    padding-right: 2em;
+  }
+}
+
+.programs-box-container {
+  margin: 5em 0;
+}
+
+.programs-box--discount {
+  background-color: $accent2t;
+}

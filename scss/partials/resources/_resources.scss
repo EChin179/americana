@@ -1,0 +1,52 @@
+.resources-body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6)), url("../img/home/wood.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  z-index: -99;
+}
+
+.resources-section {
+  margin: 10em auto;
+
+  @include mq-d {
+    margin: 3em auto;
+  }
+}
+
+.resources-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  margin: auto;
+  flex-wrap: wrap;
+
+  @include mq-w {
+    width: 80vw;
+  }
+}
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  border: 8px solid $accent2;
+  padding: 2em;
+  margin: 2em;
+  background-color: $white;
+
+  @include mq-d {
+    width: 100%;
+  }
+
+  a {
+    width: 15em;
+    margin: 0 auto 1em;
+    opacity: 1;
+  }
+
+  h2, p {
+    text-align: center;
+  }
+}

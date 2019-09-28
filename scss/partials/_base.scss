@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  color: $gray;
+  font-family: $ff;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: $fw-b;
+  letter-spacing: .05em;
+  line-height: 1.4;
+
+  @include mq-d {
+    font-size: 2rem;
+  }
+
+  @include mq-m {
+    font-size: 1.7rem;
+  }
+}
+
+h2 {
+  font-weight: $fw-sb;
+
+  @include mq-m {
+    font-size: 1.3rem;
+  }
+}
+
+h3 {
+  @include mq-w {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  @include mq-w {
+    font-size: 1.3rem;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  @include mq-w {
+    font-size: 1.3rem;
+  }
+}
+
+i {
+  font-size: 2rem;
+}
+
+button {
+  outline: none;
+}

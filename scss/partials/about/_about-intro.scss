@@ -1,0 +1,78 @@
+.about {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7)), url("../img/home/wood.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.sub-intro {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4)), url("../img/about/mountains.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 30em;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  z-index: 200;
+}
+
+.meet-us {
+  padding: 10em 0 0;
+}
+
+.sub-title {
+  width: 100vw;
+  text-align: center;
+  transform: translateY(150%);
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  width: 70vw;
+  margin: 0 auto;
+  padding: 5em 0 9em;
+  grid-gap: 2em;
+
+  @include mq-d {
+    display: block;
+    width: 90%;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+
+    @include mq-d {
+      display: none;
+    }
+  }
+}
+
+.text-box--benefits h2, p  {
+  text-align: left;
+}
+
+.text-box--benefits h2 {
+  text-transform: uppercase;
+  margin: 1em auto;
+
+  @include mq-d {
+    text-align: center;
+  }
+}
+
+.text-box--benefits p {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 0;
+
+  @include mq-d {
+    text-align: center;
+    list-style: none;
+  }
+
+  @include mq-m {
+    list-style: disc;
+  }
+
+}
